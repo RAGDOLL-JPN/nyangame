@@ -20,6 +20,8 @@ protected:
 public:
     // コマの種類を返すアクセッサ
     CC_SYNTHESIZE_READONLY(kBlock, m_blockType, BlockType);
+    CC_SYNTHESIZE_READONLY(int, m_nextPosX, NextPosX);
+    CC_SYNTHESIZE_READONLY(int, m_nextPosY, NextPosY);
     
     BlockSprite();
     virtual ~BlockSprite();
@@ -27,6 +29,9 @@ public:
     
     // create関数
     static BlockSprite* createWithBlockType(kBlock blockType);
+    
+    void initNextPos();
+    void setNextPos(int nextPosX, int nextPosY);
 };
 
 #endif /* defined(__nyangame__BlockSprite__) */
