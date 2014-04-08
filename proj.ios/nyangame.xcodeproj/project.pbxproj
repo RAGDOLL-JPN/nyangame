@@ -205,6 +205,22 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		580A8BDE18E9B3340030B283 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 580A8BDD18E9B3340030B283 /* background.png */; };
 		580A8BE118E9B3F20030B283 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 580A8BE018E9B3F20030B283 /* GameScene.cpp */; };
+		580F610618F447940023962C /* blueFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 580F60F618F447940023962C /* blueFont.fnt */; };
+		580F610718F447940023962C /* blueFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 580F60F718F447940023962C /* blueFont.png */; };
+		580F610818F447940023962C /* gameover.png in Resources */ = {isa = PBXBuildFile; fileRef = 580F60F818F447940023962C /* gameover.png */; };
+		580F610918F447940023962C /* grayFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 580F60F918F447940023962C /* grayFont.fnt */; };
+		580F610A18F447940023962C /* grayFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 580F60FA18F447940023962C /* grayFont.png */; };
+		580F610B18F447940023962C /* greenFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 580F60FB18F447940023962C /* greenFont.fnt */; };
+		580F610C18F447940023962C /* greenFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 580F60FC18F447940023962C /* greenFont.png */; };
+		580F610D18F447940023962C /* redFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 580F60FD18F447940023962C /* redFont.fnt */; };
+		580F610E18F447940023962C /* redFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 580F60FE18F447940023962C /* redFont.png */; };
+		580F610F18F447940023962C /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 580F60FF18F447940023962C /* reset.png */; };
+		580F611018F447940023962C /* reset1.png in Resources */ = {isa = PBXBuildFile; fileRef = 580F610018F447940023962C /* reset1.png */; };
+		580F611118F447940023962C /* reset2.png in Resources */ = {isa = PBXBuildFile; fileRef = 580F610118F447940023962C /* reset2.png */; };
+		580F611218F447940023962C /* whiteFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 580F610218F447940023962C /* whiteFont.fnt */; };
+		580F611318F447940023962C /* whiteFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 580F610318F447940023962C /* whiteFont.png */; };
+		580F611418F447940023962C /* yellowFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 580F610418F447940023962C /* yellowFont.fnt */; };
+		580F611518F447940023962C /* yellowFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 580F610518F447940023962C /* yellowFont.png */; };
 		58188A0418EAF8A90015F70A /* BlockSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58188A0218EAF8A90015F70A /* BlockSprite.cpp */; };
 		58188A0618EAFE2B0015F70A /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 58188A0518EAFE2B0015F70A /* blue.png */; };
 		58188A0818EAFE360015F70A /* gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 58188A0718EAFE360015F70A /* gray.png */; };
@@ -651,6 +667,22 @@
 		580A8BDD18E9B3340030B283 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		580A8BDF18E9B3550030B283 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../Classes/GameScene.h; sourceTree = "<group>"; };
 		580A8BE018E9B3F20030B283 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
+		580F60F618F447940023962C /* blueFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blueFont.fnt; sourceTree = "<group>"; };
+		580F60F718F447940023962C /* blueFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueFont.png; sourceTree = "<group>"; };
+		580F60F818F447940023962C /* gameover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameover.png; sourceTree = "<group>"; };
+		580F60F918F447940023962C /* grayFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grayFont.fnt; sourceTree = "<group>"; };
+		580F60FA18F447940023962C /* grayFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayFont.png; sourceTree = "<group>"; };
+		580F60FB18F447940023962C /* greenFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = greenFont.fnt; sourceTree = "<group>"; };
+		580F60FC18F447940023962C /* greenFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenFont.png; sourceTree = "<group>"; };
+		580F60FD18F447940023962C /* redFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = redFont.fnt; sourceTree = "<group>"; };
+		580F60FE18F447940023962C /* redFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redFont.png; sourceTree = "<group>"; };
+		580F60FF18F447940023962C /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
+		580F610018F447940023962C /* reset1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset1.png; sourceTree = "<group>"; };
+		580F610118F447940023962C /* reset2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset2.png; sourceTree = "<group>"; };
+		580F610218F447940023962C /* whiteFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = whiteFont.fnt; sourceTree = "<group>"; };
+		580F610318F447940023962C /* whiteFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteFont.png; sourceTree = "<group>"; };
+		580F610418F447940023962C /* yellowFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yellowFont.fnt; sourceTree = "<group>"; };
+		580F610518F447940023962C /* yellowFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowFont.png; sourceTree = "<group>"; };
 		58188A0118EAF8320015F70A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../Classes/Config.h; sourceTree = "<group>"; };
 		58188A0218EAF8A90015F70A /* BlockSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BlockSprite.cpp; path = ../Classes/BlockSprite.cpp; sourceTree = "<group>"; };
 		58188A0318EAF8A90015F70A /* BlockSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlockSprite.h; path = ../Classes/BlockSprite.h; sourceTree = "<group>"; };
@@ -1502,6 +1534,22 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				580F60F618F447940023962C /* blueFont.fnt */,
+				580F60F718F447940023962C /* blueFont.png */,
+				580F60F818F447940023962C /* gameover.png */,
+				580F60F918F447940023962C /* grayFont.fnt */,
+				580F60FA18F447940023962C /* grayFont.png */,
+				580F60FB18F447940023962C /* greenFont.fnt */,
+				580F60FC18F447940023962C /* greenFont.png */,
+				580F60FD18F447940023962C /* redFont.fnt */,
+				580F60FE18F447940023962C /* redFont.png */,
+				580F60FF18F447940023962C /* reset.png */,
+				580F610018F447940023962C /* reset1.png */,
+				580F610118F447940023962C /* reset2.png */,
+				580F610218F447940023962C /* whiteFont.fnt */,
+				580F610318F447940023962C /* whiteFont.png */,
+				580F610418F447940023962C /* yellowFont.fnt */,
+				580F610518F447940023962C /* yellowFont.png */,
 				58F55B9E18EDA058005EF661 /* removeBlock.mp3 */,
 				58188A0D18EAFE570015F70A /* yellow.png */,
 				58188A0B18EAFE4D0015F70A /* red.png */,
@@ -1594,6 +1642,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				58188A0A18EAFE420015F70A /* green.png in Resources */,
+				580F610818F447940023962C /* gameover.png in Resources */,
+				580F611018F447940023962C /* reset1.png in Resources */,
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				580A8BDE18E9B3340030B283 /* background.png in Resources */,
 				58188A0818EAFE360015F70A /* gray.png in Resources */,
@@ -1601,20 +1651,34 @@
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
+				580F611218F447940023962C /* whiteFont.fnt in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
+				580F611318F447940023962C /* whiteFont.png in Resources */,
+				580F610918F447940023962C /* grayFont.fnt in Resources */,
 				58188A0E18EAFE570015F70A /* yellow.png in Resources */,
+				580F610E18F447940023962C /* redFont.png in Resources */,
+				580F611118F447940023962C /* reset2.png in Resources */,
+				580F610A18F447940023962C /* grayFont.png in Resources */,
+				580F610718F447940023962C /* blueFont.png in Resources */,
 				58188A0C18EAFE4D0015F70A /* red.png in Resources */,
+				580F610618F447940023962C /* blueFont.fnt in Resources */,
+				580F610C18F447940023962C /* greenFont.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 				58188A0618EAFE2B0015F70A /* blue.png in Resources */,
+				580F611518F447940023962C /* yellowFont.png in Resources */,
 				1A9CE8881765A12C000E3062 /* json_internalarray.inl in Resources */,
+				580F610B18F447940023962C /* greenFont.fnt in Resources */,
 				1A9CE8891765A12C000E3062 /* json_internalmap.inl in Resources */,
 				1A9CE88C1765A12C000E3062 /* json_valueiterator.inl in Resources */,
 				58F55B9F18EDA058005EF661 /* removeBlock.mp3 in Resources */,
 				1A9CE88E1765A12C000E3062 /* sconscript in Resources */,
+				580F610D18F447940023962C /* redFont.fnt in Resources */,
+				580F610F18F447940023962C /* reset.png in Resources */,
+				580F611418F447940023962C /* yellowFont.fnt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
