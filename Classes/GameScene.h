@@ -29,6 +29,8 @@
 #define REMOVEING_TIME  0.1f
 #define MOVING_TIME     0.2f
 
+#define KEY_HIGHSCORE   "HighScore"
+
 class GameScene : public cocos2d::CCLayer
 {
 protected:
@@ -42,6 +44,7 @@ protected:
         kTagGrayLabel,
         kTagScoreLabel,
         kTagGameOver,
+        kTagHighScoreLabel,
         kTagBaseBlock = 10000,  // コマの基準タグ
     };
     
@@ -110,6 +113,10 @@ protected:
     
     // 2-4-3
     bool existsSameBlock();
+    
+    // 2-4-4
+    void saveHighScore();
+    void showHighScoreLabel();
     
 public:
     virtual bool init();
