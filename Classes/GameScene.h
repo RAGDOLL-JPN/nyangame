@@ -17,6 +17,14 @@
 
 #define PNG_BACKGROUND "background.png"
 #define MP3_REMOVE_BLOCK "removeBlock.mp3"
+
+#define FONT_RED    "redFont.fnt"
+#define FONT_BLUE   "blueFont.fnt"
+#define FONT_YELLOW "yellowFont.fnt"
+#define FONT_GREEN  "greenFont.fnt"
+#define FONT_GRAY   "grayFont.fnt"
+#define FONT_WHITE  "whiteFont.fnt"
+
 #define REMOVEING_TIME 0.1f
 #define MOVING_TIME 0.2f
 
@@ -26,12 +34,19 @@ protected:
     enum kTag
     {
         kTagBackground = 1, // 画像のタグ
+        kTagRedLabel,
+        kTagBlueLabel,
+        kTagYellowLabel,
+        kTagGreenLabel,
+        kTagGrayLabel,
+        kTagScoreLabel,
         kTagBaseBlock = 10000,  // コマの基準タグ
     };
     
     enum kZOrder
     {
         kZOrderBackground,  // Zオーダー
+        kZOrderLabel,
         kZOrderBlock,       // コマの基準タグ
     };
     
@@ -83,6 +98,12 @@ protected:
     void searchNewPosition2();
     void setNewPosition2(int tag, PositionIndex posIndex);
     void movingBlockAnimation2();
+    
+    // 2-4-1
+    void showLabel();
+    
+    //2-4-2
+    int m_score;
     
 public:
     virtual bool init();
