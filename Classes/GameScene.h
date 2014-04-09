@@ -15,8 +15,9 @@
 #define MAX_BLOCK_X 8  // 縦のコマ数
 #define MAX_BLOCK_Y 8  // 横のコマ数
 
-#define PNG_BACKGROUND "background.png"
-#define MP3_REMOVE_BLOCK "removeBlock.mp3"
+#define PNG_BACKGROUND      "background.png"
+#define PNG_GAMEOVER        "gameover.png"
+#define MP3_REMOVE_BLOCK    "removeBlock.mp3"
 
 #define FONT_RED    "redFont.fnt"
 #define FONT_BLUE   "blueFont.fnt"
@@ -25,8 +26,8 @@
 #define FONT_GRAY   "grayFont.fnt"
 #define FONT_WHITE  "whiteFont.fnt"
 
-#define REMOVEING_TIME 0.1f
-#define MOVING_TIME 0.2f
+#define REMOVEING_TIME  0.1f
+#define MOVING_TIME     0.2f
 
 class GameScene : public cocos2d::CCLayer
 {
@@ -40,6 +41,7 @@ protected:
         kTagGreenLabel,
         kTagGrayLabel,
         kTagScoreLabel,
+        kTagGameOver,
         kTagBaseBlock = 10000,  // コマの基準タグ
     };
     
@@ -48,6 +50,7 @@ protected:
         kZOrderBackground,  // Zオーダー
         kZOrderLabel,
         kZOrderBlock,       // コマの基準タグ
+        kZOrderGameOver,
     };
     
     struct PositionIndex
@@ -104,6 +107,9 @@ protected:
     
     //2-4-2
     int m_score;
+    
+    // 2-4-3
+    bool existsSameBlock();
     
 public:
     virtual bool init();

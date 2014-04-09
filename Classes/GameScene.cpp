@@ -404,6 +404,19 @@ void GameScene::movedBlocks()
     
     // アニメーション終了
     m_animating = false;
+    
+    // ゲーム終了チェック
+    if(!existsSameBlock())
+    {
+        CCSize bgSize = m_background->getContentSize();
+        
+        // ゲーム終了表示
+        CCSprite* gameOver = CCSprite::create(PNG_GAMEOVER);
+        gameOver->setPosition(ccp(bgSize.width / 2, bgSize.height * 0.8));
+        m_background->addChild(gameOver, kZOrderGameOver, kTagGameOver);
+        
+        setTouchEnabled(false);
+    }
 }
 
 // 新しい位置をセット
@@ -564,4 +577,31 @@ void GameScene::showLabel()
     {
         scoreLabel->setString(scoreStr);
     }
+}
+
+// 全コマに対して、隣り合うコマが存在するかチェック
+bool GameScene::existsSameBlock()
+{
+    // コマ種類のループ
+    vector<kBlock>::iterator it1 = blockTypes.begin();
+    while(it1 != blockTypes.end())
+    {
+        // 各種類のコマ数分のループ
+        list<int>::iterator it2 = m_blockTags[*it1].begin();
+        while(it2 != m_blockTags[*it1].end())
+        {
+            if(getSameColorBlockTags(*it2, *it1).size() > 1)
+            {
+                // 隣り合うコマが存在する場合は、trueを返す
+                return true;
+            }
+            
+            it2++;
+        }
+        
+        it1++;
+    }
+    
+    // 隣り合うコマが存在しない場合は、falseを返す
+    return false;
 }
