@@ -48,6 +48,9 @@ bool GameScene::init()
     showLabel();
     showHighScoreLabel();
     
+    // リセットボタン作成
+    showResetButton();
+    
     // 効果音の事前読み込み
     SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic(MP3_REMOVE_BLOCK);
     
@@ -648,4 +651,26 @@ void GameScene::saveHighScore()
         // ハイスコアを表示する
         showHighScoreLabel();
     }
+}
+
+// リセットボタンをタップ時の処理
+void GameScene::menuResetCallback(cocos2d::CCObject* pSender)
+{
+    GameScene* scene = GameScene::create();
+    CCDirector::sharedDirector()->replaceScene((CCScene*)scene);
+}
+
+// リセットボタン作成
+void GameScene::showResetButton()
+{
+    CCSize bgSize = m_background->getContentSize();
+    
+    // リセットボタン作成
+    CCMenuItemImage* resetButton = CCMenuItemImage::create(PNG_RESET, PNG_RESET, this, menu_selector(GameScene::menuResetCallback));
+    resetButton->setPosition(ccp(bgSize.width * 0.78, bgSize.height * 0.1));
+    
+    // メニュー作成
+    CCMenu* menu = CCMenu::create(resetButton, NULL);
+    menu->setPosition(CCPointZero);
+    m_background->addChild(menu);
 }

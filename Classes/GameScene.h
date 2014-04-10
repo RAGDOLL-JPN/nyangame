@@ -17,6 +17,7 @@
 
 #define PNG_BACKGROUND      "background.png"
 #define PNG_GAMEOVER        "gameover.png"
+#define PNG_RESET           "reset.png"
 #define MP3_REMOVE_BLOCK    "removeBlock.mp3"
 
 #define FONT_RED    "redFont.fnt"
@@ -117,6 +118,10 @@ protected:
     // 2-4-4
     void saveHighScore();
     void showHighScoreLabel();
+    
+    // 2-4-5
+    void menuResetCallback(cocos2d::CCObject* pSender);
+    void showResetButton();
     
 public:
     virtual bool init();
