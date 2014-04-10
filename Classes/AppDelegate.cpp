@@ -19,7 +19,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setOpenGLView(pEGLView);
 	
     // turn on display FPS
+#if COCOS2D_DEBUG > 0
     pDirector->setDisplayStats(true);
+#else
+    pDirector->setDisplayStats(false);
+#endif
 
     // 画像が画面の高さにフィットして表示される設定
     pDirector->setContentScaleFactor(768.0f / pDirector->getWinSize().height);
