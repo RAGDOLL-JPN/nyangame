@@ -691,6 +691,7 @@
 		58188A0918EAFE420015F70A /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
 		58188A0B18EAFE4D0015F70A /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		58188A0D18EAFE570015F70A /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		58288EC218FAE4E8008256C5 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Define.h; path = ../Classes/Define.h; sourceTree = "<group>"; };
 		58A7776818DF053100175D8F /* CCPlaySE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCPlaySE.h; path = ../Classes/CCPlaySE.h; sourceTree = "<group>"; };
 		58A7776918DF055000175D8F /* CCPlaySE.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCPlaySE.cpp; path = ../Classes/CCPlaySE.cpp; sourceTree = "<group>"; };
 		58F55B9E18EDA058005EF661 /* removeBlock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = removeBlock.mp3; sourceTree = "<group>"; };
@@ -1237,6 +1238,7 @@
 				58188A0118EAF8320015F70A /* Config.h */,
 				58188A0218EAF8A90015F70A /* BlockSprite.cpp */,
 				58188A0318EAF8A90015F70A /* BlockSprite.h */,
+				58288EC218FAE4E8008256C5 /* Define.h */,
 			);
 			name = Classes;
 			path = ../classes;

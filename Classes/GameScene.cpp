@@ -10,6 +10,7 @@
 #include "SimpleAudioEngine.h"
 #include "BlockSprite.h"
 #include "CCPlaySE.h"
+#include "Define.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
