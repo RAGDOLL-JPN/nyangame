@@ -36,6 +36,9 @@ bool GameScene::init()
     setTouchEnabled(true);
     setTouchMode(kCCTouchesOneByOne);
     
+    // バックキー・メニューキーイベントを取得する
+    setKeypadEnabled(true);
+    
     // 変数初期化
     initForVariables();
     
@@ -674,4 +677,16 @@ void GameScene::showResetButton()
     CCMenu* menu = CCMenu::create(resetButton, NULL);
     menu->setPosition(CCPointZero);
     m_background->addChild(menu);
+}
+
+// Androidバックキーイベント
+void GameScene::keyBackClicked()
+{
+    CCDirector::sharedDirector()->end();
+}
+
+// Androidメニューキーイベント
+void GameScene::keyMenuClicked()
+{
+    menuResetCallback(NULL);
 }
